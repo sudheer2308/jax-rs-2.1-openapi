@@ -1,6 +1,7 @@
 package com.example.model;
 
 public class Person {
+
 	private String email;
 	private String firstName;
 	private String lastName;
@@ -36,5 +37,14 @@ public class Person {
 		
 	public void setLastName(final String lastName) {
 		this.lastName = lastName;
-	}		
+	}
+
+	@Override
+	public String toString() {
+		return "Person{" +
+				"email='" + email + '\'' +
+				", firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				'}';
+	}
 }
